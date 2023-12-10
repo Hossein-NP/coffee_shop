@@ -8,20 +8,39 @@
     <link rel="stylesheet" href="../style/main.css" />
   </head>
   <body class="font-Dana">
-    <header>
-      <!-- logo & menu -->
-      <nav>
+    <!-- icon packs -->
+    <svg class="hidden">
+
+      <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+      </symbol>
+      <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </symbol>
+      <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </symbol>
+      <symbol id="arrow-left-on-rectangle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+      </symbol>
+      
+    </svg>
+
+    <header class="w-[90%] h-24 rounded-3xl bg-black/50 mx-auto">
+     <div class="flex">
+       <!-- logo & menu -->
+      <nav class="flex">
         <!-- logo -->
         <div>
           <img src="../icons/app-logo.png" alt="coffee shop logo" />
         </div>
         <!-- menu -->
-        <ul>
+        <ul class="flex">
           <li><a href="">صفحه اصلی</a></li>
           <li>
             <a href="">
               فروشگاه
-              <ul>
+              <ul class="hidden">
                 <li><a href="">قهوه ویژه</a></li>
                 <li><a href="">ویژه در سطح جهانی</a></li>
                 <li><a href="">قهوه درجه یک</a></li>
@@ -38,22 +57,33 @@
         </ul>
       </nav>
       <!-- theme toggle & cart & login -->
-      <div>
+      <div class="flex">
         <!-- theme toggle & cart -->
-        <div>
+        <div class="flex">
           <!-- cart -->
-          <div></div>
+          <div>
+            <svg class="w-6 h-6">
+              <use xlink:href="#shopping-cart"></use>
+            </svg>
+          </div>
           <!-- theme toggle -->
-          <div></div>
+          <div>
+            <svg class="w-6 h-6">
+              <use xlink:href="#moon"></use>
+            </svg>
+          </div>
         </div>
         <!-- login -->
         <div>
-          <a href="">
-            <svg></svg>
+          <a href="" class="flex">
+            <svg class="w-6 h-6">
+                <use xlink:href="#arrow-left-on-rectangle"></use>
+            </svg>
             ورود | ثبت نام
           </a>
         </div>
       </div>
+     </div>
     </header>
 
     <script src="../scripts/app.js"></script>
