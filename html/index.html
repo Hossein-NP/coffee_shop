@@ -7,7 +7,7 @@
     <link rel="icon" href="../icons/fav-icon.png" type="image/png" />
     <link rel="stylesheet" href="../style/main.css" />
   </head>
-  <body class="font-Dana">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- icon packs -->
     <svg class="hidden">
 
@@ -26,7 +26,7 @@
       
     </svg>
 
-    <header class="flex items-center w-[90%] h-24 rounded-3xl bg-black/50 mx-auto pl-4 pr-10 py-5">
+    <header class="flex fixed right-0 left-0 top-9 items-center w-[90%] h-24 rounded-3xl bg-black/50 mx-auto px-10 py-5">
      <div class="flex justify-between items-center w-full">
        <!-- logo & menu -->
       <nav class="flex items-center gap-x-9">
@@ -35,8 +35,8 @@
           <img src="../icons/app-logo.png" alt="coffee shop logo" />
         </div>
         <!-- menu -->
-        <ul class="flex gap-x-9">
-          <li><a href="">صفحه اصلی</a></li>
+        <ul class="flex gap-x-9 text-xl text-gray-300">
+          <li class="font-DanaMedium text-orange-200"><a href="">صفحه اصلی</a></li>
           <li>
             <a href="">
               فروشگاه
@@ -57,9 +57,9 @@
         </ul>
       </nav>
       <!-- theme toggle & cart & login -->
-      <div class="flex">
+      <div class="flex text-orange-200 gap-x-10 text-xl">
         <!-- theme toggle & cart -->
-        <div class="flex gap-x-5">
+        <div class="flex items-center gap-x-5">
           <!-- cart -->
           <div>
             <svg class="w-6 h-6">
@@ -73,15 +73,15 @@
             </svg>
           </div>
         </div>
+        <!-- divided border -->
+        <span class="w-px block h-14 bg-white/20"></span>
         <!-- login -->
-        <div>
-          <a href="" class="flex">
+          <a href="" class="flex items-center gap-x-2.5">
             <svg class="w-6 h-6">
                 <use xlink:href="#arrow-left-on-rectangle"></use>
             </svg>
-            ورود | ثبت نام
+            <span>ورود | ثبت نام</span>
           </a>
-        </div>
       </div>
      </div>
     </header>
